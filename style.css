@@ -1,0 +1,121 @@
+@font-face {
+  font-family: KumbhSans;
+  src: url(./Fonts/KumbhSans.ttf);
+}
+
+body {
+  height: 100vh;
+  height: 100svh;
+  background-image: url(./images/bg-pattern-top.svg);
+  background-image: url(./images/bg-pattern-bottom.svg);
+  background-color: hsl(185, 75%, 39%);
+  font-family: KumbhSans;
+}
+
+container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding: auto;
+  height: 350px;
+  width: 300px;
+  background-color: white;
+  margin-top: 190px;
+  border-radius: 10px;
+}
+
+.profile-pic {
+  border-color: white;
+  border-radius: 30px;
+  height: 50%;
+  position: absolute;
+  transform: translate(0, 60px);
+  margin-bottom: 0px;
+  padding-bottom: 0;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  padding: 0px;
+  width: 350px;
+  font-size: 14px;
+  padding-top: 0px;
+}
+
+.location {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.trim {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.stats {
+  display: flex;
+  border-top: solid hsl(0, 0%, 59%);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  max-width: 100%;
+  font-size: 12px;
+  margin-bottom: 0px;
+  gap: 0px;
+}
+
+/* .stats is set to have 0 padding, 0 margin, and 0 gap. I'm not sure why there's still so much spacing between the different values like 80k and the word followers. */
+
+h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h2 {
+  color: hsl(0, 0%, 59%);
+}
+
+p {
+  color: hsl(0, 0%, 59%);
+}
+
+img {
+  max-width: 300px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+img .profile-pic {
+  border-radius: 50%;
+  border-color: white;
+  object-fit: cover;
+}
+
+/* Both image targets are set to have a border radius of 50% with a white border but the image border is not changing at all. Not sure why it's being stubborn. */
+
+.followers {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  gap: 0px;
+}
+
+.likes {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+}
